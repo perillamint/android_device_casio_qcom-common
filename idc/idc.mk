@@ -1,4 +1,4 @@
-LOCAL_PATH := device/motorola/qcom-common
+LOCAL_PATH := device/casio/qcom-common
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/idc/atmxt-i2c.idc:system/usr/idc/atmxt-i2c.idc \
     $(LOCAL_PATH)/idc/melfas-ts.idc:system/usr/idc/melfas-ts.idc \

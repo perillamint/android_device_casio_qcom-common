@@ -1,4 +1,4 @@
-LOCAL_PATH := device/motorola/qcom-common
+LOCAL_PATH := device/casio/qcom-common
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/keylayout/atmel_mxt_ts.kl:system/usr/keylayout/atmel_mxt_ts.kl \
 	$(LOCAL_PATH)/keylayout/Button_Jack.kl:system/usr/keylayout/Button_Jack.kl \

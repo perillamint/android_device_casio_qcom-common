@@ -1,4 +1,4 @@
-LOCAL_PATH := device/motorola/qcom-common
+LOCAL_PATH := device/casio/qcom-common
 
 # NFCEE access control
 ifeq ($(TARGET_BUILD_VARIANT),user)

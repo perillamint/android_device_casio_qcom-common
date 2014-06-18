@@ -21,9 +21,9 @@
 # definition file).
 #
 
-LOCAL_PATH := device/motorola/qcom-common
+LOCAL_PATH := device/casio/qcom-common
 
-BOARD_VENDOR := motorola-qcom
+BOARD_VENDOR := casio
 
 # Bootloader
 TARGET_NO_BOOTLOADER := true
@@ -57,7 +57,7 @@ BOARD_VOLD_MAX_PARTITIONS := 40
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/file
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x00A00000
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x00A00000
-BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1560281088
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1290112000
 BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_HAS_LARGE_FILESYSTEM := true
 
@@ -132,9 +132,19 @@ BOARD_HAS_NO_REAL_SDCARD := true
 RECOVERY_SDCARD_ON_DATA := true
 HAVE_SELINUX := true
 
+TW_INCLUDE_CRYPTO := true
+TW_CRYPTO_FS_TYPE := "ext4"
+TW_CRYPTO_REAL_BLKDEV := "/dev/block/mmcblk0p14"
+TW_CRYPTO_MNT_POINT := "/data"
+TW_CRYPTO_FS_OPTIONS := "discard,noauto_da_alloc,journal_async_commit"
+TW_CRYPTO_FS_FLAGS := "0x00000406"
+TW_CRYPTO_KEY_LOC := "footer"
+
+TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
+
 # SELinux
 BOARD_SEPOLICY_DIRS += \
-	device/motorola/qcom-common/sepolicy
+	device/casio/qcom-common/sepolicy
 
 BOARD_SEPOLICY_UNION += \
 	adbd.te \

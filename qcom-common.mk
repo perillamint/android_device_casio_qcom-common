@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := device/motorola/qcom-common
+LOCAL_PATH := device/casio/qcom-common
 
 PRODUCT_BOOT_JARS += qcmediaplayer
 
@@ -245,7 +245,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.vc_call_vol_steps=7 \
     ro.modem.no_wdog_chk=1
 
-PRODUCT_GMS_CLIENTID_BASE ?= android-motorola
+PRODUCT_GMS_CLIENTID_BASE ?= android-casio
 
 # QC time services
 PRODUCT_PROPERTY_OVERRIDES += \
